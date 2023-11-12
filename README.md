@@ -6,6 +6,7 @@ vote on the facts shared by other people and this can even flag false facts. Use
  <p align="center">
 <img src="https://github.com/Zain-Basit/TiL/assets/45300116/e0c84470-a373-4977-9fb6-a9316d39d8d5" />
  </p>
+ 
 ## How It Works
 
 Load the website on [https://tilfact.netlify.app/](https://tilfact.netlify.app/) and then you can press the 'Share a Fact' button.
