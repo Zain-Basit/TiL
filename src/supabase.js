@@ -1,8 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
-require("dotenv").config();
 
-const supabaseUrl = process.env.supabaseUrl;
-const supabaseKey = process.env.supabaseKey;
+const supabaseUrl = process.env.REACT_APP_SUPABASEURL;
+const supabaseKey = process.env.REACT_APP_SUPABASEKEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default supabase;
