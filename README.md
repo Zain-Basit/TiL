@@ -1,5 +1,7 @@
 # Today I Learned
 
+### Current Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/24ea126b-877b-45b5-8c45-a9e0885725dd/deploy-status)](https://app.netlify.com/sites/tilfact/deploys)
+
 This is a website where a person can share facts they find interesting with others. They also have the ability to
 vote on the facts shared by other people and this can even flag false facts. Users can select categories to share facts in as well.
 
@@ -18,3 +20,4 @@ This will open the fact sharing form which will let you enter your fact, a sourc
  
 Once you've shared a fact, feel free to read through the others and then vote on them. If the fact seems to be false, you can vote
 it as false with the ⛔️ icon. Otherwise you can up vote it, or indicate that your mind was blown.
+
