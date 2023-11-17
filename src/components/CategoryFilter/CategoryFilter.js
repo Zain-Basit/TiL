@@ -1,11 +1,12 @@
 import React from 'react';
 import CATEGORIES from '../../Categories';
+import Category from '../Category/Category';
 
 function CategoryFilter({ setCurrentCategory }) {
   return (
-    <aside>
-      <ul>
-        <li className="category">
+    <aside data-testid="category-menu">
+      <ul data-testid="categories-list">
+        <li data-testid="category-all" className="category">
           <button
             className="btn btn-all-categories"
             onClick={() => {
@@ -16,17 +17,7 @@ function CategoryFilter({ setCurrentCategory }) {
           </button>
         </li>
         {CATEGORIES.map((category) => (
-          <li key={category.name} className="category">
-            <button
-              style={{ backgroundColor: category.color }}
-              className="btn btn-categories"
-              onClick={() => {
-                setCurrentCategory(category.name);
-              }}
-            >
-              {category.name}
-            </button>
-          </li>
+          <Category key={category.name} category={category} setCurrentCategory={setCurrentCategory}/>
         ))}
       </ul>
     </aside>
