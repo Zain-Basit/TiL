@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 function Category({ category, setCurrentCategory }) {
   return (
     <li
@@ -7,6 +8,7 @@ function Category({ category, setCurrentCategory }) {
       className="category"
     >
       <button
+        type="button"
         style={{ backgroundColor: category.color }}
         className="btn btn-categories"
         onClick={() => {
