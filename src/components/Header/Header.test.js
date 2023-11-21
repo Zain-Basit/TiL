@@ -1,8 +1,14 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import {
+  render, screen, waitFor, cleanup,
+} from '@testing-library/react';
 import Header from './Header';
 
 describe('Header', () => {
+  afterEach(() => {
+    cleanup();
+  });
+
   it('should render in the document', () => {
     render(<Header />);
     // HTML header element is identical to banner, so I can use it in this case to grab it.

@@ -8,6 +8,7 @@ function Category({ category, setCurrentCategory }) {
       className="category"
     >
       <button
+        data-testid={`category-${category.name}-button`}
         type="button"
         style={{ backgroundColor: category.color }}
         className="btn btn-categories"
